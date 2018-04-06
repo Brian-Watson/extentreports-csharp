@@ -113,8 +113,7 @@
 
                     <li class='test displayed active @containsChildrenClass @test.Status.ToString().ToLower()' status='@test.Status.ToString().ToLower()' bdd='@isTestBddType' test-id='@test.TestId'>
                         <div class='test-heading'>
-                            <span class='test-name'>@test.Name</span>
-                            <span class='test-time'>@test.StartTime</span>
+                            <span class=''>@test.Name</span>
                             <span class='test-status right @test.Status.ToString().ToLower()'>@test.Status</span>
                         </div>
                         <div class='test-content hide'>
@@ -241,7 +240,7 @@
                                                 {
                                                     <tr class='log' status='@log.Status.ToString().ToLower()'>
                                                         <td class='status @log.Status.ToString().ToLower()' title='@log.Status.ToString().ToLower()' alt='@log.Status.ToString().ToLower()'><i class='material-icons'>@Icon.GetIcon(log.Status)</i></td>
-                                                        <td class='timestamp'>@log.Timestamp</td>
+                                                        <td class='timestamp'>@log.Time</td>
                                                         <td class='step-details'>@log.Details</td>
                                                     </tr>
                                                 }
@@ -285,7 +284,7 @@
                                                                 {
                                                                     <tr class='log' status='@log.Status.ToString().ToLower()'>
                                                                         <td class='status @log.Status.ToString().ToLower()' title='@log.Status.ToString().ToLower()' alt='@log.Status.ToString().ToLower()'><i class='material-icons'>@Icon.GetIcon(log.Status)</i></td>
-                                                                        <td class='timestamp'>@log.Timestamp</td>
+                                                                        <td class='timestamp'>@log.Time</td>
                                                                         <td class='step-details'>@log.Details</td>
                                                                     </tr>
                                                                 }

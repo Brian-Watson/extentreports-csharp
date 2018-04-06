@@ -35,6 +35,14 @@ namespace AventStack.ExtentReports.Model
             ParentModel = _parent.GetModel();
         }
 
+        public string Time
+        {
+            get
+            {
+                return Timestamp.ToLongTimeString();
+            }
+        }
+
         public string Details
         {
             get
